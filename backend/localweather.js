@@ -2,7 +2,7 @@ const currentDayDOM = document.getElementById("currentDay");
 
 async function getData() {
   const url = `http://localhost:3000/weather`;
-  const response = await fetch(url);
+  const response = await fetch(url); //par défaut get
   const weatherTable = await response.json();
   console.log(weatherTable);
 

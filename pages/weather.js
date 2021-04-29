@@ -20,6 +20,7 @@ async function getData() {
   const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=40&units=metric&APPID=${API_KEY}`;
   const response = await fetch(url);
   data = await response.json();
+  console.log({ data });
 
   const data2 = {
     temp: data.list[0].main.temp,

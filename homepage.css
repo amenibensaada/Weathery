@@ -1,6 +1,7 @@
 body {
   background-image: url(./image/images_homepage/background.jpg);
   overflow-x: hidden;
+  background-size: cover;
 }
 .card {
   background-color: F2F2F2;

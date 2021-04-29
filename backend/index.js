@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
-const weatherSchema = mongoose.Schema({
+const weather1 = mongoose.Schema({
   humidity: { type: Number, required: true },
   maxTemp: { type: Number, required: true },
   minTemp: { type: Number, required: true },
@@ -11,7 +11,7 @@ const weatherSchema = mongoose.Schema({
   cloud: { type: String, required: true },
 });
 // sunny rainy cloudy
-const Weather = mongoose.model("Weather", weatherSchema);
+const Weather = mongoose.model("Weather", weather1);
 
 const app = express();
 
@@ -26,17 +26,16 @@ mongoose
   });
 
 app.use(cors());
-
 app.use(bodyParser.json());
 
-app.post("/weather", async (req, res, next) => {
+app.post("/weather", async (req, res) => {
   const newWeather = await Weather.create(req.body);
   res.json(newWeather);
 });
 
-app.get("/weather", async (req, res, next) => {
+app.get("/weather", async (req, res) => {
   const weather = await Weather.find();
   res.json(weather);
 });
 
-app.listen(3000, () => console.log("working om port 3000"));
+app.listen(3000, () => console.log("working on port 3000"));
