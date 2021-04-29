@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./weather.css" />
+    <link rel="stylesheet" href="../homepage.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ameni Ben Saada</title>
+  </head>
+  <body>
+    <div id="root">
+      <div id="weather"></div>
+
+      <div id="currentDay"></div>
+      <div id="list" class="list"></div>
+    </div>
+    <h1 style="text-align: center; " > You can choose </h1>
+    
+    <div  class="container d-flex justify-content-center m-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 pb-2  w-75  ">
+            <a href="../backend/localweather.html">
+            <div class="col ">
+                <div class="card h-100">
+                    
+                    <img src="./datacarte.svg" class="card-img-top img-fluid h-50 p-4 mb-4 " style="height: 300px; margin-left: 0px;margin-right: 150px ;margin-top: 120px;" alt="... ">
+                    <div class="card-body ">
+                        <h1 class="card-title " >
+                            Local 
+                        </h1>
+                      
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="./temperature.html">
+            
+            <div class="col ">
+                <div class="card h-100 ">
+                    <img src="./dataapi.svg"class="card-img-top img-fluid  h-50 p-4 " style="height: 300px;  margin-left: 40px; margin-top: 120px;"alt="... ">
+                    <div class="card-body ">
+                        <h1 class="card-title " style="text-align: center;">API </h1>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+    <script>
+      getData();
+    </script>
+  </body>
+</html>

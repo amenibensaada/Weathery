@@ -1,0 +1,87 @@
+body {
+  font-family: "Poppins", sans-serif;
+  width: 50%;
+  margin: auto;
+  background-image: url("../image/images_homepage/background.jpg");
+  background-size: cover;
+}
+
+.currentday_container {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.currentday_informations {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon_container {
+  display: flex;
+  align-items: center;
+}
+.icon_weather {
+  width: 100px;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+.font-weight-bold {
+  font-weight: bold;
+}
+.row {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.list_element {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 50%;
+}
+.list_item {
+  display: flex;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(151, 130, 200, 0.459);
+  margin: 10px;
+  width: 100%;
+  border: 1px solid rgba(151, 130, 200, 0.89);
+  outline: 1px solid slateblue;
+}
+.input_container {
+  margin: 50px;
+  position: relative;
+}
+.input_button {
+  position: absolute;
+  right: -10%;
+  top: 0%;
+  background-color: slateblue;
+  border: 1px solid slateblue;
+  border-radius: 10px;
+  color: white;
+  width: 100px;
+  padding: 20px;
+  cursor: pointer;
+}
+.input_button:focus {
+  position: absolute;
+  right: -10%;
+  top: 0%;
+  background-color: slateblue;
+  border: 1px solid slateblue;
+  border-radius: 10px;
+  color: white;
+  width: 100px;
+  padding: 20px;
+  outline: 1px solid slateblue;
+}

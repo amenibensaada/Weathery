@@ -1,0 +1,14 @@
+body {
+  background-image: url(./image/images_homepage/background.jpg);
+}
+.card {
+  background-color: F2F2F2;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+.card:hover {
+  transform: scale(1.15);
+}
