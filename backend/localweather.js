@@ -10,10 +10,13 @@ async function getData() {
     (element) =>
       `
   <div class="row list_element">
+
   <span class="list_item">${element.date.substring(0, 10)}</span>
-  <span class="list_item">${element.minTemp}</span>
-  <span class="list_item">${element.maxTemp}</span>
-  <span class="list_item">${element.cloud}</span>
+  <span class="list_item"> humidity : ${element.humidity}</span>
+
+  <span class="list_item">   ${element.minTemp}</span>
+  <span class="list_item"> ${element.maxTemp}</span>
+  <span class="list_item">${element.cloud}</span> 
 
   </div>
   `
