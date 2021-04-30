@@ -1,4 +1,4 @@
-const currentDayDOM = document.getElementById("currentDay");
+// const currentDayDOM = document.getElementById("currentDay");
 
 async function getData() {
   const url = `http://localhost:3000/weather`;
